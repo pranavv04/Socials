@@ -37,24 +37,6 @@ A full-stack social media application built using the **MERN (MongoDB, Express, 
 - bcrypt for password hashing
 
 ---
-## 📂 Folder Structure
-```
-MERN-Social-Media-App/
-│-- client/            # React frontend
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── redux/
-│   │   │   ├── store.js
-│   │   │   ├── authSlice.js
-│   │   │   ├── postSlice.js
-│-- server/            # Node.js backend
-│   ├── models/
-│   ├── routes/
-│   ├── controllers/
-│   ├── middleware/
-│   ├── index.js       # Main server file
-```
 
 ---
 ## 🖥️ Installation & Setup
@@ -93,28 +75,6 @@ npm start
 ---
 ## 🔄 Redux State Management
 Redux is used to manage global states for authentication and posts.
-### Example Redux Slice (authSlice.js)
-```js
-import { createSlice } from "@reduxjs/toolkit";
-
-const authSlice = createSlice({
-  name: "auth",
-  initialState: { user: null, token: null },
-  reducers: {
-    loginSuccess: (state, action) => {
-      state.user = action.payload.user;
-      state.token = action.payload.token;
-    },
-    logout: (state) => {
-      state.user = null;
-      state.token = null;
-    },
-  },
-});
-
-export const { loginSuccess, logout } = authSlice.actions;
-export default authSlice.reducer;
-```
 
 ---
 ## 📌 API Endpoints
