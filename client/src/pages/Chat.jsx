@@ -85,6 +85,7 @@ const Chat = () => {
       {/* Chat Header */}
       <div className="p-4 border-b flex items-center justify-between">
         <h2 className="text-xl font-semibold">Chat</h2>
+        <p className="text-sm text-red-500" > Use this as demo User Id : 67b8e798065ba3591c477091 </p>
         <input
           type="text"
           value={enteredUserId}
