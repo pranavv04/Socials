@@ -78,6 +78,7 @@ const Login = () => {
         <form onSubmit={handleSubmit}>
           <div className={`flex flex-col mt-5 border border-black w-[600px] text-center items-center justify-center rounded-4xl ${mode ? 'bg-[#121212] text-white' : 'bg-white text-black '}`}>
             <p className="text-xl font-bold">Log into Socials</p>
+            <p className="text-sm text-red-500 font-bold">Use drake as password and username</p>
 
             <input
               type="text"
