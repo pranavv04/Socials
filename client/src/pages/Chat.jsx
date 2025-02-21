@@ -23,7 +23,7 @@ const Chat = () => {
       try {
         console.log(`Fetching messages between ${loggedInUserId} and ${enteredUserId}`);
         const response = await axios.get(
-          `http://localhost:4000/message/chat/${loggedInUserId}/${enteredUserId}`,
+          `https://socials-mpdh.onrender.com/message/chat/${loggedInUserId}/${enteredUserId}`,
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -61,7 +61,7 @@ const Chat = () => {
       console.log(`Sending message from ${loggedInUserId} to ${enteredUserId}`);
 
       const response = await axios.post(
-        "http://localhost:4000/message/send",
+        "https://socials-mpdh.onrender.com/message/send",
         requestData,
         { headers: { Authorization: `Bearer ${token}` } }
       );

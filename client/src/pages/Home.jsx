@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const response = await fetch("http://localhost:4000/post");
+        const response = await fetch("https://socials-mpdh.onrender.com/post");
         if (response.ok) {
           const data = await response.json();
           // Sorting posts by createdAt in descending order (latest first)
@@ -58,7 +58,7 @@ const Home = () => {
         )
       );
 
-      await fetch(`http://localhost:4000/post/like/${postId}`, {
+      await fetch(`https://socials-mpdh.onrender.com/post/like/${postId}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -88,7 +88,7 @@ const Home = () => {
       const userId = decodedToken._id || decodedToken.id || decodedToken.userId;
 
       const response = await fetch(
-        `http://localhost:4000/post/comment/${selectedPost._id}`,
+        `https://socials-mpdh.onrender.com/post/comment/${selectedPost._id}`,
         {
           method: "POST",
           headers: {

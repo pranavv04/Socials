@@ -22,7 +22,7 @@ const EditProfile = () => {
             try {
                 const token = localStorage.getItem("token"); // Get token from local storage
     
-                const response = await fetch(`http://localhost:4000/user/${id}`, {
+                const response = await fetch(`https://socials-mpdh.onrender.com/user/${id}`, {
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json",
@@ -70,7 +70,7 @@ const EditProfile = () => {
         console.log('Sending data', updatedUserData);
 
         try {
-            const response = await fetch(`http://localhost:4000/user/${id}`, {
+            const response = await fetch(`https://socials-mpdh.onrender.com/user/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'

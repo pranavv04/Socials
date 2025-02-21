@@ -25,7 +25,7 @@ const CreatePost = () => {
         e.preventDefault();
     
         try {
-            const response = await fetch('http://localhost:4000/post/createpost', { // ✅ Add await
+            const response = await fetch('https://socials-mpdh.onrender.com/post/createpost', { // ✅ Add await
                 method: 'POST',
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),

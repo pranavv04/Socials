@@ -24,7 +24,7 @@ const Profile = () => {
           return;
         }
 
-        const response = await fetch(`http://localhost:4000/user/${id}`, {
+        const response = await fetch(`https://socials-mpdh.onrender.com/user/${id}`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -53,7 +53,7 @@ const Profile = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await fetch("http://localhost:4000/post/");
+        const response = await fetch("https://socials-mpdh.onrender.com/post/");
         if (!response.ok) {
           toast.error("Error fetching posts.");
           return;
@@ -80,8 +80,8 @@ const Profile = () => {
   
     try {
       const url = isFollowing
-        ? `http://localhost:4000/user/unfollow/${id}`
-        : `http://localhost:4000/user/follow/${id}`;
+        ? `https://socials-mpdh.onrender.com/user/unfollow/${id}`
+        : `https://socials-mpdh.onrender.com/user/follow/${id}`;
   
       console.log("Making API request to:", url);
   
