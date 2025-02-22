@@ -35,6 +35,7 @@ A full-stack social media application built using the **MERN (MongoDB, Express, 
 - MongoDB + Mongoose
 - JWT Authentication
 - bcrypt for password hashing
+- Socket.io for chat system
 
 ---
 
