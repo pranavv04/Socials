@@ -217,7 +217,7 @@ const Home = () => {
       {selectedPost && (
         <div
           className={`fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center ${
-            darkMode ? `text-white` `bg-black` : `text-black` `bg-white`
+            darkMode ? `text-black` : `text-black` 
           } text-sm`}
         >
           <div className="bg-white dark:bg-gray-900 p-4 rounded-lg w-96">
