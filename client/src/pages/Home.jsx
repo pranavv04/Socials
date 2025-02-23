@@ -237,7 +237,7 @@ const Home = () => {
               className="w-full p-2 border rounded mt-2"
             />
             <button
-              className={`bg-blue-500  p-2 text-sm rounded mt-2 w-full`}
+              className={`bg-blue-500  p-2 text-white text-sm rounded mt-2 w-full`}
               onClick={handleAddComment}
             >
               Add Comment
