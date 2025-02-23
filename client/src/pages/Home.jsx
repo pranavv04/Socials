@@ -217,7 +217,7 @@ const Home = () => {
       {selectedPost && (
         <div
           className={`fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center ${
-            darkMode ? `text-white` : `text-white`
+            darkMode ? `text-white` : `text-black`
           } text-sm`}
         >
           <div className="bg-white dark:bg-gray-900 p-4 rounded-lg w-96">
@@ -237,7 +237,7 @@ const Home = () => {
               className="w-full p-2 border rounded mt-2"
             />
             <button
-              className="bg-blue-500 text-white p-2 text-sm rounded mt-2 w-full"
+              className={`bg-blue-500  p-2 text-sm rounded mt-2 w-full`}
               onClick={handleAddComment}
             >
               Add Comment
